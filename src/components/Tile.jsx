@@ -1,6 +1,6 @@
 function Tile(props) {
     function decideImageOrText() {
-        if (props.tileContainsImage) {
+        if (props.tileImage) {
             return (
                 <img src={props.tileImage} alt={props.tileTitle}/>
             );

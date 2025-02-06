@@ -47,22 +47,18 @@ function App() {
             </main>
             <footer>
                 <Tile
-                    tileContainsImage={false}
                     tileTitle="The brand"
                     tileDescription={["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet " +
                     "excepturi itaque molestias officia provident quaerat sapiente sunt, temporibus voluptate. Amet " +
                     "autem cum neque nostrum officiis quibusdam recusandae similique sunt?"]}
                 />
                 <Tile
-                    tileContainsImage={true}
                     tileImage={brandImage}
                 />
                 <Tile
-                    tileContainsImage={true}
                     tileImage={storyImage}
                 />
                 <Tile
-                    tileContainsImage={false}
                     tileTitle="Our story"
                     tileDescription={["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet " +
                     "excepturi itaque molestias officia provident quaerat sapiente sunt, temporibus voluptate.",
