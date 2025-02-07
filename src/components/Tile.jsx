@@ -8,8 +8,7 @@ function Tile(props) {
             <>
                 <h2>{props.tileTitle}</h2>
                 {props.tileDescription.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                ))}
+                    <p key={index}>{paragraph}</p>))}
             </>
         );
     }
