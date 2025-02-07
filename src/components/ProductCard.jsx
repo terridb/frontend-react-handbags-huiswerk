@@ -1,10 +1,14 @@
-function ProductCard(props) {
+function ProductCard({productLabel, productImage, productTitle, productPrice}) {
+    function generatePriceString(price) {
+        return `€${price},-`;
+    }
+
     return (
         <article>
-            <span>{props.productLabel}</span>
-            <img src={props.productImage} alt={props.productTitle}/>
-            <p>{props.productTitle}</p>
-            <h4>{props.productPrice}</h4>
+            <span>{productLabel}</span>
+            <img src={productImage} alt={productTitle}/>
+            <p>{productTitle}</p>
+            <h4>{generatePriceString(productPrice)}</h4>
         </article>
     )
 }

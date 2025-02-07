@@ -7,8 +7,7 @@ function Tile(props) {
         } else return (
             <>
                 <h2>{props.tileTitle}</h2>
-                {props.tileDescription.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>))}
+                {props.children}
             </>
         );
     }

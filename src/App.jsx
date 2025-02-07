@@ -24,47 +24,42 @@ function App() {
                     productLabel="Best seller"
                     productImage={bagOne}
                     productTitle="The handy bag"
-                    productPrice="€400,-"
+                    productPrice="400"
                 />
                 <ProductCard
                     productLabel="Best seller"
                     productImage={bagTwo}
                     productTitle="The stylish bag"
-                    productPrice="€250,-"
+                    productPrice="250"
                 />
                 <ProductCard
                     productLabel="New collection"
                     productImage={bagThree}
                     productTitle="The simple bag"
-                    productPrice="€300,-"
+                    productPrice="300"
                 />
                 <ProductCard
                     productLabel="New collection"
                     productImage={bagFour}
                     productTitle="The trendy bag"
-                    productPrice="€150,-"
+                    productPrice="150"
                 />
             </main>
             <footer>
-                <Tile
-                    tileTitle="The brand"
-                    tileDescription={["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet " +
-                    "excepturi itaque molestias officia provident quaerat sapiente sunt, temporibus voluptate. Amet " +
-                    "autem cum neque nostrum officiis quibusdam recusandae similique sunt?"]}
-                />
-                <Tile
-                    tileImage={brandImage}
-                />
-                <Tile
-                    tileImage={storyImage}
-                />
-                <Tile
-                    tileTitle="Our story"
-                    tileDescription={["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet " +
-                    "excepturi itaque molestias officia provident quaerat sapiente sunt, temporibus voluptate.",
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet excepturi " +
-                        "itaque molestias officia provident quaerat sapiente sunt, temporibus voluptate."]}
-                />
+                <Tile tileTitle="The brand">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti expedita itaque
+                        numquam officia optio perspiciatis porro! Aliquid at, autem corporis dignissimos dolor eveniet
+                        fugiat modi natus nesciunt nostrum quidem ratione sint soluta tenetur ullam.</p>
+                </Tile>
+                <Tile tileImage={brandImage}/>
+                <Tile tileImage={storyImage}/>
+                <Tile tileTitle="Our story">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque culpa ducimus,
+                        eaque eos expedita id ipsa mollitia nam officia omnis placeat, quam quia quibusdam quo totam
+                        ullam vel, voluptates!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eaque error facilis
+                        ipsum magnam quibusdam quidem tempora velit vero.</p>
+                </Tile>
             </footer>
         </>
     )
