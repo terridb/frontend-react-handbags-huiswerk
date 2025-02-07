@@ -1,13 +1,13 @@
-function Tile(props) {
+function Tile({tileImage, tileTitle, children}) {
     function decideImageOrText() {
-        if (props.tileImage) {
+        if (tileImage) {
             return (
-                <img src={props.tileImage} alt={props.tileTitle}/>
+                <img src={tileImage} alt={tileTitle}/>
             );
         } else return (
             <>
-                <h2>{props.tileTitle}</h2>
-                {props.children}
+                <h2>{tileTitle}</h2>
+                {children}
             </>
         );
     }
